@@ -46,12 +46,18 @@
     border: 2px solid #dedede;
     background-color: #f1f1f1;
     border-radius: 2px;
-    margin: 10px 0;
+    margin: 3% 0%;
+    padding: 0% 1%;
+}
+
+.chat-left{
+    margin-right: 7%;
 }
   
 .darker {
     border-color: #ccc;
     background-color: #ddd;
+    margin-left: 7%;
 }
 
 .time-right {
@@ -64,3 +70,7 @@
     color: #999;
 }
   
+/* Profile */
+.profile-form{
+    margin: 0% 2%;
+}
