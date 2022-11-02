@@ -22,3 +22,10 @@
     padding-left: 3%;
     padding-right: 3%;
 }
+
+/* Home Page */
+.fixed-row-bottom {  
+    position:fixed;
+    bottom:0;
+    width:100%;
+}
