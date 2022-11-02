@@ -1,10 +1,24 @@
+/* Get Started Page */
+.screen{
+    overflow: auto;
+}
 .get-started{
-    padding-top: 75%;
+    margin-bottom: 30%;
 }
 
-.start_logo{
+.image_center{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 20%;
+}
+
+.start_logo{
+    padding-top: 15%;
+    max-width:100%;
+}
+
+/* Register Page */
+.register_form{
+    padding-left: 3%;
+    padding-right: 3%;
 }
