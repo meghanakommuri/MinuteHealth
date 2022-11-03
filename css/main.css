@@ -79,11 +79,27 @@
 /* yourmedicine.html */
 .table-row {
   display: table-row;
-  height: 100px;
+  height: 90px;
 }
 .table-cell {
   border: 1px solid;
-  width:300px;
+  width:200px;
   display: table-cell;
   padding: 2px;
 }
+
+/* medicinereminder */
+#btnSearch,
+#btnClear{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.btn-warning{
+  background-color: #E99619;
+}
+.btn-success{
+    background-color: #4AD63D;
+}
+
+/* addmed */
