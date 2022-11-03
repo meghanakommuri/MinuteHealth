@@ -24,7 +24,7 @@
 }
 
 /* Home Page */
-.fixed-row-bottom {  
+.fixed-row-bottom {
     position:fixed;
     bottom:0;
     width:100%;
@@ -53,7 +53,7 @@
 .chat-left{
     margin-right: 7%;
 }
-  
+
 .darker {
     border-color: #ccc;
     background-color: #ddd;
@@ -64,13 +64,26 @@
     float: right;
     color: #aaa;
 }
-  
+
 .time-left {
     float: left;
     color: #999;
 }
-  
+
 /* Profile */
 .profile-form{
     margin: 0% 2%;
+}
+
+
+/* yourmedicine.html */
+.table-row {
+  display: table-row;
+  height: 100px;
+}
+.table-cell {
+  border: 1px solid;
+  width:300px;
+  display: table-cell;
+  padding: 2px;
 }
