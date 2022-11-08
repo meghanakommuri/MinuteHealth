@@ -27,59 +27,50 @@
                 </svg>
             </div>
         </div><br>
+
         <h3 class="text-center">MEDICINE CHECKLIST</h3><br>
 
-        <div class="form-group1">
-            <input type="dropdown"  placeholder="Today" >
-        </div><br><br>
-             
-              <div class="col-xs-8">
-                <div class="card-body text-left">
-                  <h4 class="card-title">Vitamin C
+          <form >
+            <label for="cars">Choose the Timeframe:</label>
+            <select name="Timeframe" id="Timeframe">
+            <option value="Today">Today</option>
+            <option value="This Week">This Week</option>
+            <option value="This Month">This Month</option>
+            </select>
+          </form><br><br> 
 
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <h4>Vitamin C</h4>
+        </div>
+        <div class="col-xs-6">
+          <button class="btn btn-success btn-lg">Taken</button>
+        </div>
+      </div><br>
 
-                  
-                  <button id="btnClear" class="btn btn-success btn-lg float-right pull-right" Style="width: 100px" OnClick="btnClear_Click"
-                        type="submit">
-                     Taken
-                  </button></h4><br>
-                </div>
-                
-              </div>
-              <div class="col-xs-8">
-                <div class="card-body text-left">
-                  <h4 class="card-title">Iron
-                <button id="btnClear" class="btn btn-success btn-lg float-right pull-right" Style="width: 100px" OnClick="btnClear_Click"
-                  type="submit">
-                    Taken
-                </button></h4><br>
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <h4>Iron</h4>
+        </div>
+        <div class="col-xs-6">
+          <button class="btn btn-success btn-lg">Taken</button>
+        </div>
+      </div><br>
 
-                </div>
-              </div>
-              <div class="col-xs-8">
-                <div class="card-body text-left">
-                  <h4 class="card-title">D3
-                  <button id="btnClear" class="btn btn-warning btn-lg float-right pull-right " Style="width: 100px"   OnClick="btnClear_Click"
-                        type="submit">
-                     Pending
-                  </button></h4><br><br>
-                </div>
-              </div>
-              </div><br>
+      <div class="row">
+        <div class="col-xs-6 text-center">
+          <h4>D3</h4>
+        </div>
+        <div class="col-xs-6">
+          <button class="btn btn-warning btn-lg">Not Yet</button>
+        </div>
+      </div><br><br>
+      
+      <div class="text-center" onclick="location.href='stats1.html';">
+        <button type="submit" class="btn btn-primary btn-lg">View All Trends</button>
+      </div>
           
             
-    </div><br><br>
-    <form class="text-center">
-        <button type="submit" class="btn btn-primary btn-lg">View All Trends</button>
-    </form>
-
-
-    <div class="row">
-      <div class="col-sm-18 text-center">
-          <!-- <button id="btnClear" class="btn btn-success btn-lg float-right" Style="width: 100px;" OnClick="btnClear_Click" >TAKEN</button> -->
-          <!-- <button id="btnClear" class="btn btn-success btn-md center-block" Style="width: 100px;" OnClick="btnClear_Click" >TAKEN</button> -->
-          <!-- <button id="btnSearch" class="btn btn-warning btn-md center-block" Style="width: 100px;" OnClick="btnSearch_Click" >PENDING</button> -->
-      </div>
     </div>
 
     <div class="fixed-row-bottom">
