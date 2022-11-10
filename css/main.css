@@ -41,6 +41,15 @@
     border-style: solid;
 }
 
+.card-small{
+    padding: 2%;
+    text-align: center;
+    border: #000;
+    border-width: 1px;
+    border-style: solid;
+    height: 100px;
+}
+
 /* MedPal Chat */
 .chat {
     border: 2px solid #dedede;
