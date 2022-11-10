@@ -35,6 +35,13 @@
     margin-top: 5%;
 }
 
+/*Medpal form*/
+.info{
+    color:blue; 
+    font-size:110%; 
+    text-align:center;
+}
+
 /* MedPal Info */
 .medpal-card{
     padding: 5%;
@@ -122,4 +129,9 @@
   color: #000;
   text-align: center;
   font: 32px Arial, sans-serif;
+}
+
+.backbutton{
+    background-color: transparent;
+    border:0;
 }
