@@ -38,7 +38,7 @@ function validateEmail(email) {
     }
     else {
       if(!validateName(name)){
-        result.text("Invalid name. Name can contain only alphabets.");
+        result.text("Invalid username. Name can contain only alphabets.");
         result.css("color", "red");
         return false;
       }

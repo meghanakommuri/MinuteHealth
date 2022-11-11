@@ -23,12 +23,17 @@
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
           </svg>
       </div>
-    </div>
-    <h2><center>ADD YOUR MEDICINE</center></h2>
+    </div><br>
+
+    <h3 class="text-center">ADD YOUR MEDICINE</h3><br>
     <form method="post" action="yourmedicine.html">
       <div class="form-group">
-        <label for="name">Name: </label>
+        <label for="name">Medicine Name</label>
         <input class = "form-control" type="text" id="name" name = "name" placeholder="Medicine Name">
+      </div>
+      <div class="form-group">
+        <label for="name">Dosage</label>
+        <input class = "form-control" type="text" id="dosage" name = "dosage" placeholder="Dosage">
       </div>
       <div class="form-group">
         <label class="form-label" for="customFile">Image</label>
@@ -45,35 +50,26 @@
           <p id="idfriday" class="friday" onclick="fridayFunction()">F</p>
           <p id="idsaturday" class="saturday" onclick="saturdayFunction()">Sa</p>
           <p id="idsunday" class="sunday" onclick="sundayFunction()">Su</p>
-          <!-- <p class="monday">M</p>
-          <p class="tuesday">Tu</p>
-          <p class="wednesday">W</p>
-          <p class="thursday">Th</p>
-          <p class="friday">F</p>
-          <p class="saturday">Sa</p>
-          <p class="sunday">Su</p> -->
-          <!-- <p class="monday" style="flex-basis:10%;">M</p>
-          <p class="tuesday" style="flex-basis:10%;">Tu</p>
-          <p class="wednesday" style="flex-basis:10%;">W</p>
-          <p class="thursday" style="flex-basis:10%;">Th</p>
-          <p class="friday" style="flex-basis:10%;">F</p>
-          <p class="saturday" style="flex-basis:10%;">Sa</p>
-          <p class="sunday" style="flex-basis:10%;">Su</p> -->
-          <!-- 49.5% + 49.5% = 99%, remaining 1% is distributed according to justify-content -->
-      </div>
+        </div>
       </div>
       <div class="form-group">
-        <label for="appt">Select a time:</label>
+        <input type="checkbox" id="everyday" name="everyday">
+        <label for="time">Everyday</label>
+      </div>
+      <div class="form-group">
+        <label for="appt">Select time:</label>
         <input type="time" id="appt" name="appt">
         <input type="time" id="appt" name="appt">
       </div>
+      <div class="text-center">
       <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+      </div>
     </form>
   </div>
   
   <div class="fixed-row-bottom">
     <hr>
-    <div class="col-xs-3 text-center">
+    <div class="col-xs-3 text-center" onclick="location.href='yourmedicine.html';">
         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
           <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5z"/>
         </svg>
@@ -91,7 +87,7 @@
         <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
       </svg>
     </div>
-    <div class="col-xs-3 text-center">
+    <div class="col-xs-3 text-center" onclick="location.href='checklist.html';">
       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
       </svg>

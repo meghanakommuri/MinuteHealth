@@ -13,7 +13,7 @@
 }
 
 .start_logo{
-    padding-top: 15%;
+    padding-top: 7%;
     max-width:100%;
 }
 
@@ -104,6 +104,11 @@
   padding: 2px;
 }
 
+.yourmed-card{
+    padding: 1%;
+    border-style: solid;
+}
+
 /* medicinereminder */
 #btnSearch,
 #btnClear{
@@ -126,7 +131,7 @@
   display: inline-block;
 }
 .togglemonday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .tuesday{
   border: 0px solid black;
@@ -135,7 +140,7 @@
   display: inline-block;
 }
 .toggletuesday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .wednesday{
   border: 0px solid black;
@@ -144,7 +149,7 @@
   display: inline-block;
 }
 .togglewednesday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .thursday{
   border: 0px solid black;
@@ -153,7 +158,7 @@
   display: inline-block;
 }
 .togglethursday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .friday{
   border: 0px solid black;
@@ -162,7 +167,7 @@
   display: inline-block;
 }
 .togglefriday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .saturday{
   border: 0px solid black;
@@ -171,7 +176,7 @@
   display: inline-block;
 }
 .togglesaturday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .sunday{
   border: 0px solid black;
@@ -180,7 +185,7 @@
   display: inline-block;
 }
 .togglesunday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 
 .circle {
