@@ -32,7 +32,7 @@
       </div>
 
       <h3 class="text-center">ADD YOUR MEDICINE</h3>
-      
+
       <form  class="profile-form" method="post" action="yourmedicine.html">
         <div class="form-group">
           <label for="name">Medicine Name</label>
@@ -60,7 +60,7 @@
           </div>
         </div>
         <div class="form-group">
-          <input type="checkbox" id="everyday" name="everyday">
+          <input type="checkbox" id="everyday" name="everyday" onchange="checkbox(this)">
           <label for="time">Everyday</label>
         </div>
         <div class="form-group">
@@ -73,7 +73,7 @@
         </div>
       </form>
     </div>
-    
+
     <div class="fixed-row-bottom">
       <hr>
       <div class="col-xs-3 text-center" onclick="location.href='yourmedicine.html';">
