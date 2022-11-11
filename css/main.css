@@ -119,6 +119,70 @@
 }
 
 /* addmed */
+.monday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglemonday{
+  border: 1px solid black;
+}
+.tuesday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.toggletuesday{
+  border: 1px solid black;
+}
+.wednesday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglewednesday{
+  border: 1px solid black;
+}
+.thursday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglethursday{
+  border: 1px solid black;
+}
+.friday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglefriday{
+  border: 1px solid black;
+}
+.saturday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglesaturday{
+  border: 1px solid black;
+}
+.sunday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglesunday{
+  border: 1px solid black;
+}
+
 .circle {
   border-radius: 50%;
   width: 34px;
@@ -135,3 +199,4 @@
     background-color: transparent;
     border:0;
 }
+

@@ -9,6 +9,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
   <div class="container">
@@ -24,7 +25,7 @@
       </div>
     </div>
     <h2><center>ADD YOUR MEDICINE</center></h2>
-    <form action="" method="post">
+    <form method="post" action="yourmedicine.html">
       <div class="form-group">
         <label for="name">Name: </label>
         <input class = "form-control" type="text" id="name" name = "name" placeholder="Medicine Name">
@@ -37,13 +38,27 @@
       <div class="form-group">
         <div style="display: flex; justify-content: space-between;">
           <label class="form-label">Days</label>
-          <p style="flex-basis:10%;">M</p>
-          <p style="flex-basis:10%;">Tu</p>
-          <p style="flex-basis:10%;">W</p>
-          <p style="flex-basis:10%;">Th</p>
-          <p style="flex-basis:10%;">F</p>
-          <p style="flex-basis:10%;">Sa</p>
-          <p style="flex-basis:10%;">Su</p>
+          <p id="idmonday" class="monday" onclick="mondayFunction()">M</p>
+          <p id="idtuesday" class="tuesday" onclick="tuesdayFunction()">Tu</p>
+          <p id="idwednesday" class="wednesday" onclick="wednesdayFunction()">W</p>
+          <p id="idthursday" class="thursday" onclick="thursdayFunction()">Th</p>
+          <p id="idfriday" class="friday" onclick="fridayFunction()">F</p>
+          <p id="idsaturday" class="saturday" onclick="saturdayFunction()">Sa</p>
+          <p id="idsunday" class="sunday" onclick="sundayFunction()">Su</p>
+          <!-- <p class="monday">M</p>
+          <p class="tuesday">Tu</p>
+          <p class="wednesday">W</p>
+          <p class="thursday">Th</p>
+          <p class="friday">F</p>
+          <p class="saturday">Sa</p>
+          <p class="sunday">Su</p> -->
+          <!-- <p class="monday" style="flex-basis:10%;">M</p>
+          <p class="tuesday" style="flex-basis:10%;">Tu</p>
+          <p class="wednesday" style="flex-basis:10%;">W</p>
+          <p class="thursday" style="flex-basis:10%;">Th</p>
+          <p class="friday" style="flex-basis:10%;">F</p>
+          <p class="saturday" style="flex-basis:10%;">Sa</p>
+          <p class="sunday" style="flex-basis:10%;">Su</p> -->
           <!-- 49.5% + 49.5% = 99%, remaining 1% is distributed according to justify-content -->
       </div>
       </div>
@@ -52,12 +67,10 @@
         <input type="time" id="appt" name="appt">
         <input type="time" id="appt" name="appt">
       </div>
-
-      <center><input type="submit" class="btn btn-primary btn-lg"></center>
-
-
+      <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
     </form>
   </div>
+  
   <div class="fixed-row-bottom">
     <hr>
     <div class="col-xs-3 text-center">
