@@ -49,12 +49,12 @@
 }
 
 .card-small{
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     border: #000;
     border-width: 1px;
     border-style: solid;
-    height: 100px;
+    height: 75px;
 }
 
 /* MedPal Chat */
