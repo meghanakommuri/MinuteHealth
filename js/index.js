@@ -32,3 +32,58 @@ function sundayFunction() {
    var element = document.getElementById("idsunday");
    element.classList.toggle("togglesunday");
 }
+
+function alldaycheckFunction() {
+  var element = document.getElementById("idmonday");
+  element.classList.add("togglemonday");
+
+  var element = document.getElementById("idtuesday");
+  element.classList.add("toggletuesday");
+
+  var element = document.getElementById("idwednesday");
+  element.classList.add("togglewednesday");
+
+  var element = document.getElementById("idthursday");
+  element.classList.add("togglethursday");
+
+  var element = document.getElementById("idfriday");
+  element.classList.add("togglefriday");
+
+  var element = document.getElementById("idsaturday");
+  element.classList.add("togglesaturday");
+
+  var element = document.getElementById("idsunday");
+  element.classList.add("togglesunday");
+
+}
+
+function removealldaycheckFunction() {
+  var element = document.getElementById("idmonday");
+  element.classList.remove("togglemonday");
+
+  var element = document.getElementById("idtuesday");
+  element.classList.remove("toggletuesday");
+
+  var element = document.getElementById("idwednesday");
+  element.classList.remove("togglewednesday");
+
+  var element = document.getElementById("idthursday");
+  element.classList.remove("togglethursday");
+
+  var element = document.getElementById("idfriday");
+  element.classList.remove("togglefriday");
+
+  var element = document.getElementById("idsaturday");
+  element.classList.remove("togglesaturday");
+
+  var element = document.getElementById("idsunday");
+  element.classList.remove("togglesunday");
+}
+
+function checkbox(checkboxElem) {
+  if (checkboxElem.checked) {
+    alldaycheckFunction();
+  } else {
+    removealldaycheckFunction()
+  }
+}
