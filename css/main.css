@@ -135,3 +135,27 @@
     background-color: transparent;
     border:0;
 }
+
+.food-carousel-left img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.food-carousel-left {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.food-carousel-images{
+  width:40%;
+  margin-left: 3%; 
+  float: left;
+}
+
+.food-carousel-text{
+  color:black; 
+  width: 50%; 
+  float: right; 
+  margin-right: 5%;
+} 
