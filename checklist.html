@@ -30,36 +30,40 @@
 
         <h3 class="text-center">MEDICINE CHECKLIST</h3><br>
 
-          <form >
-            <label for="cars">Choose the Timeframe:</label>
+          <form class="profile-form">
+            <label for="Timeframe">Choose the Timeframe:</label>
             <select name="Timeframe" id="Timeframe">
             <option value="Today">Today</option>
             <option value="This Week">This Week</option>
             <option value="This Month">This Month</option>
             </select>
           </form><br><br> 
-
-      <div class="row">
+        
+      <div class="row" onclick="location.href='taken1.html';">
         <div class="col-xs-6 text-center">
-          <h4>Vitamin C</h4>
+          <p><b>Vitamin C - 500 mg</b></p>
+          <h6>9:00AM</h6>
+          <h6>8:00PM</h6>
         </div>
         <div class="col-xs-6">
           <button class="btn btn-success btn-lg">Taken</button>
         </div>
       </div><br>
 
-      <div class="row">
+      <div class="row" onclick="location.href='taken2.html';">
         <div class="col-xs-6 text-center">
-          <h4>Iron</h4>
+          <p><b>Iron - 65 mg</b></p>
+          <h6>1:00PM</h6>
         </div>
         <div class="col-xs-6">
           <button class="btn btn-success btn-lg">Taken</button>
         </div>
       </div><br>
 
-      <div class="row">
+      <div class="row" onclick="location.href='notyet.html';">
         <div class="col-xs-6 text-center">
-          <h4>D3</h4>
+          <p><b>D3 - 50 mcg</b></p>
+          <h6>8:00PM</h6>
         </div>
         <div class="col-xs-6">
           <button class="btn btn-warning btn-lg">Not Yet</button>
@@ -68,9 +72,7 @@
       
       <div class="text-center" onclick="location.href='stats1.html';">
         <button type="submit" class="btn btn-primary btn-lg">View All Trends</button>
-      </div>
-          
-            
+      </div>    
     </div>
 
     <div class="fixed-row-bottom">
@@ -94,7 +96,7 @@
           </svg>
         </div>
         <div class="col-xs-3 text-center" onclick="location.href='checklist.html';">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3062C8" class="bi bi-list-check" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
           </svg>
         </div>

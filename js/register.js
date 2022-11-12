@@ -38,7 +38,7 @@ function validateEmail(email) {
     }
     else {
       if(!validateName(name)){
-        result.text("Invalid name. Name can contain only alphabets.");
+        result.text("Invalid username. Name can contain only alphabets.");
         result.css("color", "red");
         return false;
       }
@@ -48,7 +48,7 @@ function validateEmail(email) {
       return false;
     }
     if(!validatePassword(pwd)){
-      result.text("Invalid password");
+      result.text("Invalid password. Password should contain one capital, number, special character");
       result.css("color", "red");
       return false;
     }

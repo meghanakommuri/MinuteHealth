@@ -13,14 +13,14 @@
 }
 
 .start_logo{
-    padding-top: 15%;
+    padding-top: 7%;
     max-width:100%;
 }
 
 /* Register Page */
 .register_form{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 /* Home Page */
@@ -49,12 +49,12 @@
 }
 
 .card-small{
-    padding: 2%;
+    padding: 1%;
     text-align: center;
     border: #000;
     border-width: 1px;
     border-style: solid;
-    height: 100px;
+    height: 75px;
 }
 
 /* MedPal Chat */
@@ -88,7 +88,7 @@
 
 /* Profile */
 .profile-form{
-    margin: 0% 2%;
+    margin: 0% 5%;
 }
 
 
@@ -102,6 +102,11 @@
   width:200px;
   display: table-cell;
   padding: 2px;
+}
+
+.yourmed-card{
+    padding: 1%;
+    border-style: solid;
 }
 
 /* medicinereminder */
@@ -119,6 +124,70 @@
 }
 
 /* addmed */
+.monday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglemonday{
+  border: 2px solid red;
+}
+.tuesday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.toggletuesday{
+  border: 2px solid red;
+}
+.wednesday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglewednesday{
+  border: 2px solid red;
+}
+.thursday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglethursday{
+  border: 2px solid red;
+}
+.friday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglefriday{
+  border: 2px solid red;
+}
+.saturday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglesaturday{
+  border: 2px solid red;
+}
+.sunday{
+  border: 0px solid black;
+  border-radius:50%;
+  padding:3px;
+  display: inline-block;
+}
+.togglesunday{
+  border: 2px solid red;
+}
+
 .circle {
   border-radius: 50%;
   width: 34px;
