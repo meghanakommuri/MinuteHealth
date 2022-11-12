@@ -24,43 +24,43 @@
               <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
             </svg>
         </div>
-      </div><br>
+      </div>
       <div onclick="location.href='home.html';">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
         </svg>
       </div>
 
-      <h3 class="text-center">ADD YOUR MEDICINE</h3>
+      <h4 class="text-center">ADD YOUR MEDICINE</h4>
 
       <form  class="profile-form" method="post" action="yourmedicine.html">
         <div class="form-group">
-          <label for="name">Medicine Name</label>
+          <label for="name" style="font-size: 12px">Medicine Name</label>
           <input class = "form-control" type="text" id="name" name = "name" placeholder="Medicine Name">
         </div>
         <div class="form-group">
-          <label for="name">Dosage</label>
+          <label for="name" style="font-size: 12px">Dosage</label>
           <input class = "form-control" type="text" id="dosage" name = "dosage" placeholder="Dosage">
         </div>
         <div class="form-group">
-          <label class="form-label" for="customFile">Image</label>
-          <input type="file" class="form-control" id="customFile" />
+          <label class="form-label" for="customFile" style="font-size: 12px">Image</label>
+          <input type="file" class="form-control" id="customFile"/>
         </div>
         <div class="form-group">
-          <label for="name">Notes</label>
+          <label for="name" style="font-size: 12px">Notes</label>
           <input class = "form-control" type="text" placeholder="take with water / take after food">
         </div>
 
         <div class="form-group">
           <div style="display: flex; justify-content: space-between;">
-            <label class="form-label">Days</label>
-            <p id="idmonday" class="monday" onclick="mondayFunction()">M</p>
-            <p id="idtuesday" class="tuesday" onclick="tuesdayFunction()">Tu</p>
-            <p id="idwednesday" class="wednesday" onclick="wednesdayFunction()">W</p>
-            <p id="idthursday" class="thursday" onclick="thursdayFunction()">Th</p>
-            <p id="idfriday" class="friday" onclick="fridayFunction()">F</p>
-            <p id="idsaturday" class="saturday" onclick="saturdayFunction()">Sa</p>
-            <p id="idsunday" class="sunday" onclick="sundayFunction()">Su</p>
+            <label class="form-label" style="font-size: 12px">Days</label>
+            <p id="idmonday" class="monday" style="font-size: 12px" onclick="mondayFunction()">M</p>
+            <p id="idtuesday" class="tuesday" style="font-size: 12px" onclick="tuesdayFunction()">Tu</p>
+            <p id="idwednesday" class="wednesday" style="font-size: 12px" onclick="wednesdayFunction()">W</p>
+            <p id="idthursday" class="thursday" style="font-size: 12px" onclick="thursdayFunction()">Th</p>
+            <p id="idfriday" class="friday" style="font-size: 12px" onclick="fridayFunction()">F</p>
+            <p id="idsaturday" class="saturday" style="font-size: 12px" onclick="saturdayFunction()">Sa</p>
+            <p id="idsunday" class="sunday" style="font-size: 12px" onclick="sundayFunction()">Su</p>
           </div>
         </div>
         <div class="form-group">
@@ -73,7 +73,7 @@
           <input type="time" id="appt" name="appt">
         </div>
         <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-lg">SUBMIT</button>
+        <button type="submit" class="btn btn-primary btn-sm">SUBMIT</button>
         </div>
       </form>
     </div>
