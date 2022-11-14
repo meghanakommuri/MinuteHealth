@@ -12,11 +12,14 @@ var contact = myArray[2].slice(8);
 // console.log(age);
 // console.log(contact);
 
+var matchname=document.getElementById("matchname")
 
 
 var keys=Object.keys(localStorage);
 for(var key of keys){
+  if(key == name){continue;}
   if(localStorage.getItem(key) == age ){
+    matchname.innerHTML = key;
     console.log("Age Matched")
   };
 }
