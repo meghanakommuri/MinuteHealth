@@ -15,6 +15,8 @@ var medicinename = myArray[2].slice(13);
 
 var matchname=document.getElementById("matchname");
 var matchmedicine=document.getElementById("matchmedicine");
+var matchage=document.getElementById("matchage");
+
 // var age = document.getElementById("age");
 
 
@@ -28,6 +30,7 @@ for(var key of keys){
   if(localStorage.getItem(key).slice(3) == medicinename ){
     matchname.innerHTML = "Name: "+key;
     matchmedicine.innerHTML="Meicine Name: "+medicinename;
+    matchage.innerHTML="Age: "+localStorage.getItem(key).slice(0,2);
     console.log("Medicine Matched");
   };
 }
