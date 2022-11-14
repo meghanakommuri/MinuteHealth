@@ -13,14 +13,14 @@
 }
 
 .start_logo{
-    padding-top: 15%;
+    padding-top: 7%;
     max-width:100%;
 }
 
 /* Register Page */
 .register_form{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 /* Home Page */
@@ -29,6 +29,10 @@
     bottom:0;
     width:100%;
     padding-bottom: 3%;
+}
+
+hr{
+  background: black;
 }
 
 .top-row{
@@ -54,7 +58,7 @@
     border: #000;
     border-width: 1px;
     border-style: solid;
-    height: 75px;
+    height: 80px;
 }
 
 /* MedPal Chat */
@@ -88,7 +92,7 @@
 
 /* Profile */
 .profile-form{
-    margin: 0% 2%;
+    margin: 0% 5%;
 }
 
 
@@ -102,6 +106,11 @@
   width:200px;
   display: table-cell;
   padding: 2px;
+}
+
+.yourmed-card{
+    padding: 1%;
+    border-style: solid;
 }
 
 /* medicinereminder */
@@ -126,7 +135,7 @@
   display: inline-block;
 }
 .togglemonday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .tuesday{
   border: 0px solid black;
@@ -135,7 +144,7 @@
   display: inline-block;
 }
 .toggletuesday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .wednesday{
   border: 0px solid black;
@@ -144,7 +153,7 @@
   display: inline-block;
 }
 .togglewednesday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .thursday{
   border: 0px solid black;
@@ -153,7 +162,7 @@
   display: inline-block;
 }
 .togglethursday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .friday{
   border: 0px solid black;
@@ -162,7 +171,7 @@
   display: inline-block;
 }
 .togglefriday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .saturday{
   border: 0px solid black;
@@ -171,7 +180,7 @@
   display: inline-block;
 }
 .togglesaturday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 .sunday{
   border: 0px solid black;
@@ -180,7 +189,7 @@
   display: inline-block;
 }
 .togglesunday{
-  border: 1px solid black;
+  border: 2px solid red;
 }
 
 .circle {
@@ -200,3 +209,26 @@
     border:0;
 }
 
+.food-carousel-left img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.food-carousel-left {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.food-carousel-images{
+  width:40%;
+  margin-left: 3%; 
+  float: left;
+}
+
+.food-carousel-text{
+  color:black; 
+  width: 50%; 
+  float: right; 
+  margin-right: 5%;
+} 
