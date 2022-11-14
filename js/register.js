@@ -32,6 +32,7 @@ function validateEmail(email) {
             result.css("color", "red");
             return false;
         } else {
+            sessionStorage.setItem('user', name)
             alert("Registered successfully");
             return true;
         }
