@@ -34,10 +34,10 @@
         </button><br>
         <h2 class="text-center">FIND A PAL</h2>
         <p class="text-center">Enter details to match with a pal!!</p>
-        <form action="matchfound.html">
+        <form action="matchfound.html" method="GET">
             <div class="form-group">
                 <label for="name">Name:</label>
-                <input type="text" class="form-control" id="fname" placeholder="Enter name">
+                <input type="text" class="form-control" id="fname" placeholder="Enter name" name="name">
             </div>
             <div class="form-group">
                 <label for="age">Age:</label>
@@ -49,7 +49,7 @@
             </div>
             <p class="info">We use your medicine data present in this app to find your pal! </p>
             <div class="text-center">
-                <button type="button" class="btn btn-primary btn-lg" id="findmatch">FIND A MATCH</button>
+                <button type="button submit" class="btn btn-primary btn-lg" id="findmatch">FIND A MATCH</button>
             </div>
         </form>
       </div>
