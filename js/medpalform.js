@@ -1,7 +1,7 @@
-console.log("medpalform.js is running")
-var findmatch=document.getElementById("findmatch")
-var age=document.getElementById("age")
-var fname=document.getElementById("fname")
+// console.log("medpalform.js is running")
+// var findmatch=document.getElementById("findmatch")
+// var age=document.getElementById("age")
+// var fname=document.getElementById("fname")
 
 
 // findmatch.onclick=function(){

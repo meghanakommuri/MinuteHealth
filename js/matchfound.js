@@ -2,27 +2,35 @@
 console.log("matchfound page is working");
 // console.log(window.location.search);
 var queryString = window.location.search.replace(/^\?/, '');
-// console.log(queryString);
 const myArray = queryString.split("&");
+// const newArray = [];
 // console.log(myArray);
 var name = myArray[0].slice(5);
 var age = myArray[1].slice(4);
-var contact = myArray[2].slice(8);
+var medicinename = myArray[2].slice(13);
+
 // console.log(name);
 // console.log(age);
-// console.log(contact);
+// console.log(medicinename);
 
-var matchname=document.getElementById("matchname")
+var matchname=document.getElementById("matchname");
+var matchmedicine=document.getElementById("matchmedicine");
+// var age = document.getElementById("age");
+
 
 
 var keys=Object.keys(localStorage);
 for(var key of keys){
   if(key == name){continue;}
-  if(localStorage.getItem(key) == age ){
-    matchname.innerHTML = key;
-    console.log("Age Matched")
+  console.log(localStorage.getItem(key));
+
+
+  if(localStorage.getItem(key).slice(3) == medicinename ){
+    matchname.innerHTML = "Name: "+key;
+    matchmedicine.innerHTML="Meicine Name: "+medicinename;
+    console.log("Medicine Matched");
   };
 }
 
 
-localStorage.setItem(name,age);
+localStorage.setItem(name,[age,medicinename]);
