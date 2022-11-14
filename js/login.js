@@ -10,6 +10,7 @@ function validateLogin(){
     return false;
     }
   if(name==="test" && pwd==="Test@123"){
+    sessionStorage.setItem('user', name)
     return true
   }
   else {
