@@ -22,3 +22,14 @@ for(var key of keys){
 }
 
 localStorage.setItem(name,[age,medicinename]);
+
+localStorage.setItem("person1",["18","VitmainA"]);
+localStorage.setItem("person2",["19","VitmainB"]);
+localStorage.setItem("person3",["20","VitmainC"]);
+localStorage.setItem("person4",["21","VitmainD"]);
+localStorage.setItem("person5",["22","VitmainE"]);
+localStorage.setItem("person6",["23","Iron"]);
+localStorage.setItem("person7",["24","Calcium"]);
+localStorage.setItem("person8",["25","MultiVitamin"]);
+localStorage.setItem("person9",["26","VitmainC"]);
+localStorage.setItem("person10",["27","VitmainA"]);
