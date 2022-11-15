@@ -19,6 +19,7 @@ for(var key of keys){
   var substringarray = localStorage.getItem(key).split(",");
   if(substringarray[1] == medicinename ){
     matchname.innerHTML = "Name: "+key;
+    sessionStorage.setItem('pal', key)
     matchmedicine.innerHTML="Medicine: "+medicinename;
     matchage.innerHTML="Age: "+substringarray[0];
   };
