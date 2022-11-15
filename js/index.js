@@ -87,3 +87,23 @@ function checkbox(checkboxElem) {
     removealldaycheckFunction()
   }
 }
+
+function validateAddMed(){
+   let result = $("#result");
+   let name = $("#name").val();
+   let dosage = $("#dosage").val();
+   let timestart = $("#apptstart").val();
+   let timeend = $("#apptend").val();
+   let file = document.getElementById("customFile").files;
+   result.text("");
+   if(name.length===0 || dosage.length===0 || file.length===0 || timeend.length==0 || timestart.length==0){
+     result.text("Fill all required fields");
+     result.css("color", "red");
+     return false;
+   }
+   else{
+     return true;
+   }
+ }
+
+ $("#validate").on("click", validateAddMed);

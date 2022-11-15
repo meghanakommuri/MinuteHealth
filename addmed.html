@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <script src="js/index.js" async></script>
   </head>
 
   <body>
@@ -35,16 +35,16 @@
 
       <form  class="profile-form" action="yourmedicine.html">
         <div class="form-group">
-          <label for="name" style="font-size: 12px">Medicine Name</label>
+          <label for="name" style="font-size: 12px" class="required">Medicine Name</label>
           <input class = "form-control" type="text" id="name" name = "name" placeholder="Medicine Name">
         </div>
         <div class="form-group">
-          <label for="name" style="font-size: 12px">Dosage</label>
+          <label for="name" style="font-size: 12px" class="required">Dosage</label>
           <input class = "form-control" type="text" id="dosage" name = "dosage" placeholder="Dosage">
         </div>
         <div class="form-group">
-          <label class="form-label" for="customFile" style="font-size: 12px">Image</label>
-          <input type="file" class="form-control" id="customFile"/>
+          <label class="form-label required" for="customFile" style="font-size: 12px">Image</label>
+          <input type="file" class="form-control" id="customFile" name="customFile"/>
         </div>
         <div class="form-group">
           <label for="name" style="font-size: 12px">Notes</label>
@@ -68,12 +68,14 @@
           <label for="time">Everyday</label>
         </div>
         <div class="form-group">
-          <label for="appt">Select time:</label>
-          <input type="time" id="appt" name="appt">
-          <input type="time" id="appt" name="appt">
+          <label for="appt" class="required">Select time:</label>
+          <input type="time" id="apptstart" name="appt">
+          <input type="time" id="apptend" name="appt">
+          <p style="color:red;">(*=Required)</p>
         </div>
         <div class="text-center">
-        <button type="submit" class="btn btn-primary btn-sm">SUBMIT</button>
+          <div id='result'></div><br>
+          <button type="submit" id="validate" class="btn btn-primary btn-sm">SUBMIT</button>
         </div>
       </form>
     </div>

@@ -236,3 +236,8 @@ hr{
   float: right; 
   margin-right: 5%;
 } 
+
+.required:after {
+    content:" *";
+    color: red;
+  }
