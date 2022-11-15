@@ -1,28 +1,10 @@
-// console.log("medpalform.js is running")
-// var findmatch=document.getElementById("findmatch")
-// var age=document.getElementById("age")
-// var fname=document.getElementById("fname")
-
-
-// findmatch.onclick=function(){
-//     localStorage.setItem(fname.value,age.value);
-//     var keys = Object.keys(localStorage);
-//     console.log(keys);
-// }
-
-// findmatch.onclick=function(){
-//   console.log("inside findmatch function");
-//     var keys=Object.keys(localStorage);
-//     // console.log(keys);
-//
-//     for(var key of keys){
-//       console.log(typeof key);
-//       if(localStorage.getItem(key) == age ){
-//         console.log("Age Matched")
-//       };
-//       if(key == "key1"){
-//         console.log("Key : "+key+" : Value : "+localStorage.getItem(key));
-//       }
-//
-//     }
-// }
+localStorage.setItem("James",["18","VitaminA"]);
+localStorage.setItem("Charlie",["19","VitaminB"]);
+localStorage.setItem("Alice",["20","VitaminC"]);
+localStorage.setItem("Bob",["21","VitaminD"]);
+localStorage.setItem("Dexter",["22","VitaminE"]);
+localStorage.setItem("Emily",["23","Iron"]);
+localStorage.setItem("Fabiola",["24","Calcium"]);
+localStorage.setItem("Henry",["25","MultiVitamin"]);
+localStorage.setItem("Zayn",["26","VitaminC"]);
+localStorage.setItem("Lious",["27","VitaminA"]);
