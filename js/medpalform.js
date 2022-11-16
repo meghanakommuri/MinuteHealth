@@ -1,3 +1,7 @@
+let data = sessionStorage.getItem("user");
+document.getElementById("name").setAttribute('value',data);
+
+
 localStorage.setItem("James",["18","VitaminA"]);
 localStorage.setItem("Charlie",["19","VitaminB"]);
 localStorage.setItem("Alice",["20","VitaminC"]);
