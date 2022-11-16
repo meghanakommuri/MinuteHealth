@@ -32,7 +32,10 @@ function validateEmail(email) {
             result.css("color", "red");
             return false;
         } else {
-            sessionStorage.setItem('user', name)
+            sessionStorage.setItem('user', name);
+            sessionStorage.setItem('email', email);
+            console.log(name)
+            console.log(email)
             alert("Registered successfully");
             return true;
         }
