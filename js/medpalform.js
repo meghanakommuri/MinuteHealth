@@ -25,6 +25,11 @@ function validateMedpalForm(){
       result.css("color", "red");
       return false;
     }
+    else if(parseInt(age)<15){
+      result.text("Age should be greater than 15");
+      result.css("color", "red");
+      return false;
+    }
     else{
       return true;
     }
