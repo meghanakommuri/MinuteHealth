@@ -34,6 +34,7 @@ function validateEmail(email) {
         } else {
             sessionStorage.setItem('user', name);
             sessionStorage.setItem('email', email);
+            sessionStorage.setItem('medpal', "false");
             console.log(name)
             console.log(email)
             alert("Registered successfully");
