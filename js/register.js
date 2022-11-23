@@ -52,7 +52,7 @@ function validateEmail(email) {
       return false;
     }
     if(!validatePassword(pwd)){
-      result.text("Invalid password. Password should contain one capital, number, special character");
+      result.text("Invalid password. Password should contain one small, capital, number, special character");
       result.css("color", "red");
       return false;
     }
