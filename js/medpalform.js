@@ -2,16 +2,17 @@ let data = sessionStorage.getItem("user");
 document.getElementById("name").setAttribute('value',data);
 
 
-localStorage.setItem("James",["18","VitaminA"]);
-localStorage.setItem("Charlie",["19","VitaminB"]);
-localStorage.setItem("Alice",["20","VitaminC"]);
-localStorage.setItem("Bob",["21","VitaminD"]);
-localStorage.setItem("Dexter",["22","VitaminE"]);
-localStorage.setItem("Emily",["23","Iron"]);
-localStorage.setItem("Fabiola",["24","Calcium"]);
-localStorage.setItem("Henry",["25","MultiVitamin"]);
-localStorage.setItem("Zayn",["26","VitaminC"]);
-localStorage.setItem("Lious",["27","VitaminA"]);
+localStorage.setItem("James",["18","VitaminA","David"]);
+localStorage.setItem("Lucifer",["28","VitaminA","David"]);
+localStorage.setItem("Charlie",["19","VitaminB","David"]);
+localStorage.setItem("Alice",["20","VitaminC","David"]);
+localStorage.setItem("Bob",["21","VitaminD","David"]);
+localStorage.setItem("Dexter",["22","VitaminE","David"]);
+localStorage.setItem("Emily",["23","Iron","David"]);
+localStorage.setItem("Fabiola",["24","Calcium","David"]);
+localStorage.setItem("Henry",["25","MultiVitamin","David"]);
+localStorage.setItem("Zayn",["26","VitaminC","David"]);
+localStorage.setItem("Lious",["27","VitaminA","David"]);
 
 
 function validateMedpalForm(){
