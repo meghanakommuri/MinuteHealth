@@ -12,6 +12,22 @@ function validateEmail(email) {
     return res3.test(name);
   }
 
+  function myFunction1() {
+    var x = document.getElementById("pwd");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function myFunction2() {
+    var x = document.getElementById("confirm_pwd");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
   function validate() {
     let result = $("#result");
     let name = $("#name").val();
@@ -60,3 +76,4 @@ function validateEmail(email) {
   }
 }
 $("#validate").on("click", validate);
+
