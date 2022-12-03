@@ -12,7 +12,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-
+  <script src="js/medpal.js" async></script>
 </head>
 <body>
     <div class="container">
@@ -27,6 +27,11 @@
                 </svg>
             </div>
         </div><br>
+        <div onclick="location.href='medicinereminder.html';">
+          <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+          </svg>
+        </div>
 
         <h3 class="text-center">MEDICINE CHECKLIST</h3><br>
 
@@ -37,8 +42,8 @@
             <option value="This Week">This Week</option>
             <option value="This Month">This Month</option>
             </select>
-          </form><br><br> 
-        
+          </form><br><br>
+
       <div class="row" onclick="location.href='taken1.html';">
         <div class="col-xs-6 text-center">
           <p><b>Vitamin C - 500 mg</b></p>
@@ -69,10 +74,10 @@
           <button class="btn btn-warning btn-lg">Not Yet</button>
         </div>
       </div><br><br>
-      
+
       <div class="text-center" onclick="location.href='Stats1.html';">
         <button type="submit" class="btn btn-primary btn-lg">View All Trends</button>
-      </div>    
+      </div>
     </div>
 
     <div class="fixed-row-bottom">
@@ -88,7 +93,7 @@
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </div>
-        <div class="col-xs-3 text-center" onclick="location.href='medpalform.html';">
+        <div class="col-xs-3 text-center" onclick=navigate()>
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>

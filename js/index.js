@@ -87,3 +87,44 @@ function checkbox(checkboxElem) {
     removealldaycheckFunction()
   }
 }
+
+var count = 0;
+
+ document.getElementById("addTime").onclick = function() {
+  var timebox = document.getElementById("parent");
+  var input = document.createElement("input");
+  input.type = "time";
+  input.id="time";
+  input.style.marginRight="10px";
+  input.style.marginBottom="8px";
+  timebox.appendChild(input);
+  count = count + 1;
+  if(count == 6){
+    document.getElementById("addTime").disabled = true;
+    return;
+ }
+}
+
+function validateAddMed(){
+   let result = $("#result");
+   let name = $("#name").val();
+   let dosage = $("#dosage").val();
+   let time= $("#time").val() 
+   let file = document.getElementById("customFile").files;
+   result.text("");
+   if(name.length===0 || dosage.length===0 || file.length===0 || count===0 || time.length===0){
+     result.text("Fill all required fields");
+     result.css("color", "red");
+     return false;
+   }
+   else{
+     return true;
+   }
+ }
+
+$("#validate").on("click", validateAddMed);
+
+function tooltipShow() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
