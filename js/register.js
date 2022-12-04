@@ -43,7 +43,7 @@ function validateEmail(email) {
     }
     if(validateEmail(email) && validatePassword(pwd) && validateName(name)) {
         if(pwd != pwd2)
-        {	
+        {
             result.text("Passwords do not match");
             result.css("color", "red");
             return false;
@@ -77,3 +77,11 @@ function validateEmail(email) {
 }
 $("#validate").on("click", validate);
 
+// Adding session variable to store top 3 medicines
+sessionStorage.setItem('medicine1_name', "Vitamin C")
+sessionStorage.setItem('medicine2_name', "Iron")
+sessionStorage.setItem('medicine3_name', "D3")
+
+sessionStorage.setItem('medicine1_dosage', "500 mg")
+sessionStorage.setItem('medicine2_dosage', "65 mg")
+sessionStorage.setItem('medicine3_dosage', "50 mcg")
