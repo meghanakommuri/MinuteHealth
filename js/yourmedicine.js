@@ -13,11 +13,24 @@ med2.style.fontWeight = "bold";
 med3.innerHTML = sessionStorage.getItem("medicine3_name") + " - " + sessionStorage.getItem("medicine3_dosage");
 med3.style.fontWeight = "bold";
 
+if (sessionStorage.getItem('visibility_med1') == 0){
+  cards[0].style.display = "none";
+}
+
+if (sessionStorage.getItem('visibility_med2') == 0){
+  cards[1].style.display = "none";
+}
+
+if (sessionStorage.getItem('visibility_med3') == 0){
+  cards[2].style.display = "none";
+}
+
 d1.onclick = function(){
   var confirmdelete1 = confirm("Are you sure to delete?");
   if (confirmdelete1==true)
     {
     cards[0].style.display = "none";
+    sessionStorage.setItem('visibility_med1',0);
     }
 }
 
@@ -26,6 +39,7 @@ d2.onclick = function(){
   if (confirmdelete2==true)
     {
     cards[1].style.display = "none";
+    sessionStorage.setItem('visibility_med2',0);
     }
 }
 
@@ -34,5 +48,6 @@ d3.onclick = function(){
   if (confirmdelete3==true)
     {
     cards[2].style.display = "none";
+    sessionStorage.setItem('visibility_med3',0);
     }
 }

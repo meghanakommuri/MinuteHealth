@@ -85,3 +85,7 @@ sessionStorage.setItem('medicine3_name', "D3")
 sessionStorage.setItem('medicine1_dosage', "500 mg")
 sessionStorage.setItem('medicine2_dosage', "65 mg")
 sessionStorage.setItem('medicine3_dosage', "50 mcg")
+
+sessionStorage.setItem('visibility_med1',1);
+sessionStorage.setItem('visibility_med2',1);
+sessionStorage.setItem('visibility_med3',1);
