@@ -108,6 +108,7 @@ $('#addTime').click(function () {
   count = count + 1;
   if(count >= 3){
     document.getElementById("addTime").disabled = true;
+    document.getElementById("result").style.marginTop= "-8px";
  }
  else{
     document.getElementById("addTime").disabled = false;
