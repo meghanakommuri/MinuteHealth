@@ -310,3 +310,8 @@ hr{
   from {opacity: 0;}
   to {opacity:1 ;}
 }
+
+.onerow {
+  display:inline;
+  margin-top: -10px;
+}
