@@ -271,5 +271,6 @@ hr{
 
 .weekDays-selector input[type=checkbox]:checked + label {
   background: #71dd59;
+
   color: #ffffff;
 }

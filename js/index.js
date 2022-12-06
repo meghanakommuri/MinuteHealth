@@ -2,6 +2,7 @@ function allAreFalse(days) {
   return days.every(element => element.checked === false);
 }
 
+
 var monday = document.getElementById("weekday-mon");
 var tuesday = document.getElementById("weekday-tue");
 var wednesday = document.getElementById("weekday-wed");
@@ -16,6 +17,16 @@ function alldaycheckFunction() {
     d.checked=true;
   } 
 }
+
+$("input[type='checkbox'].weekday").change(function(){
+  var a = $("input[type='checkbox'].weekday");
+  if(a.length == a.filter(":checked").length){
+      document.getElementById("everyday").checked=true;
+  }
+  else{
+    document.getElementById("everyday").checked=false;
+  }
+});
 
 function removealldaycheckFunction() {
   for(d of days){
