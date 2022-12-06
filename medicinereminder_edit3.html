@@ -24,29 +24,30 @@
             </svg>
         </div>
       </div>
-      <div onclick="location.href='home.html';" style="margin-top: 10px">
+      <div onclick="location.href='yourmedicine.html';" style="margin-top: 10px">
         <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
         </svg>
       </div>
-      <h4 class="text-center" style="margin-top: -30px;">ADD YOUR MEDICINE</h4>
+      <h4 class="text-center" style="margin-top: -30px;">EDIT YOUR MEDICINE</h4>
       <form  class="profile-form" action="yourmedicine.html">
         <div class="form-group onerow">
           <label for="name" style="font-size: 12px;" class="required">Medicine Name</label>
-          <input class = "form-control" type="text" id="name" name = "name" placeholder="Vitamin C, Iron">
+          <input class = "form-control" type="text" id="med3_name" name = "name" placeholder="Vitamin C, Iron">
         </div>
         <div class="form-group onerow">
           <label for="name" style="font-size: 12px;" class="required">Dosage</label>
-          <input class = "form-control" type="text" id="dosage" name = "dosage" placeholder="Eg: 400 mg, 500 mcg, 1200 mg">
+          <input class = "form-control" type="text" id="med3_dosage" name = "dosage" placeholder="Eg: 400 mg, 500 mcg, 1200 mg">
         </div>
         <div class="form-group onerow">
           <label class="form-label required" for="customFile" style="font-size: 12px">Image</label>
           <input type="file" class="form-control" id="customFile" name="customFile"/>
         </div>
-        <div class="form-group onerow">
+        <div class="form-group">
           <label for="name" style="font-size: 12px">Notes</label>
           <input class = "form-control" type="text" placeholder="take with water / take after food">
         </div>
+
         <label class="form-label required" style="font-size: 12px;">Days</label>
         <div class="weekDays-selector">
           <input type="checkbox" id="weekday-mon" class="weekday" />
@@ -64,14 +65,9 @@
           <input type="checkbox" id="weekday-sun" class="weekday" />
           <label for="weekday-sun">Su</label>
         </div>
-<!--
-        <div class="form-group">
-          <label class="control-label" for="WorkWeek">Select days:</label>
-          <div name="WorkWeek" class="days-of-week" id="WorkWeek"></div>
-        </div> -->
         <div class="form-group">
           <input type="checkbox" id="everyday" name="everyday" onchange="checkbox(this)">
-          <label for="everyday">Everyday</label>
+          <label for="time">Everyday</label>
         </div>
         <div id="parent" style="margin-top: -10px;">
           <label style="vertical-align: top;" class="required">Medicine time</label>
@@ -98,13 +94,13 @@
                 <input type="time" onfocus="clearError(this)" class="vTimeEnd" id="timeend" />
               </td>
               <td>
-                <input type="button" value="Delete" id="delete"/>
+                <input type="button" value="Delete" />
               </td>
             </tr>
           </table></br>
         </div>
         <div class="text-center">
-          <div id='result' style="margin-top:0px"></div>
+          <div id='result'></div>
           <button type="submit" id="validate" style="margin-top: 0px;" class="btn btn-primary btn-sm">SUBMIT</button>
         </div>
       </form>
@@ -136,7 +132,8 @@
         </svg>
       </div>
     </div>
-    <script src="js/index.js" async></script>
+    <!-- <script src="js/index.js" async></script> -->
     <script src="js/medpal.js" async></script>
+    <script src="js/medicinereminder_edit3.js"></script>
   </body>
 </html>

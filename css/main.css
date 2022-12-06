@@ -13,14 +13,14 @@
 }
 
 .start_logo{
-    padding-top: 15%;
+    padding-top: 7%;
     max-width:100%;
 }
 
 /* Register Page */
 .register_form{
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 4%;
+    padding-right: 4%;
 }
 
 /* Home Page */
@@ -31,14 +31,34 @@
     padding-bottom: 3%;
 }
 
+hr{
+  background: black;
+}
+
 .top-row{
     margin-top: 5%;
+}
+
+/*Medpal form*/
+.info{
+    color:blue;
+    font-size:110%;
+    text-align:center;
 }
 
 /* MedPal Info */
 .medpal-card{
     padding: 5%;
     border-style: solid;
+}
+
+.card-small{
+    padding: 1%;
+    text-align: center;
+    border: #000;
+    border-width: 1px;
+    border-style: solid;
+    height: 80px;
 }
 
 /* MedPal Chat */
@@ -72,7 +92,11 @@
 
 /* Profile */
 .profile-form{
-    margin: 0% 2%;
+    margin: 0% 5%;
+}
+
+.logout{
+  margin-left: 5%;
 }
 
 
@@ -87,6 +111,21 @@
   display: table-cell;
   padding: 2px;
 }
+
+.yourmed-card{
+    padding: 1%;
+    border-style: solid;
+    border-bottom: 0px;
+}
+
+.edit_belete_button{
+    padding: 1%;
+    font-size: 10px;
+    text-align: right;
+    border-style: solid;
+    border-top: 0px;
+}
+
 
 /* medicinereminder */
 #btnSearch,
@@ -103,6 +142,7 @@
 }
 
 /* addmed */
+
 .circle {
   border-radius: 50%;
   width: 34px;
@@ -113,4 +153,124 @@
   color: #000;
   text-align: center;
   font: 32px Arial, sans-serif;
+}
+
+.backbutton{
+    background-color: transparent;
+    border:0;
+}
+
+.food-carousel-left img {
+  max-height: 300px;
+  margin: 0 auto;
+}
+
+.food-carousel-left {
+  width: 100%;
+  float: left;
+  margin-bottom: 50px;
+}
+
+.food-carousel-images{
+  width:40%;
+  margin-left: 3%;
+  float: left;
+}
+
+.food-carousel-text{
+  color:black;
+  width: 50%;
+  float: right;
+  margin-right: 5%;
+}
+
+.required:after {
+    content:" *";
+    color: red;
+  }
+
+
+/* --------- Tooltip Styles ---------- */
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
+.onerow {
+  display:inline;
+  margin-top: -10px;
+}
+
+.weekDays-selector input {
+  display: none!important;
+}
+.weekDays-selector input[type=checkbox] + label {
+  display: inline-block;
+  border-radius: 12px;
+  background: #ffffff;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  margin-right: 16px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weekDays-selector input[type=checkbox]:checked + label {
+  background: #71dd59;
+
+  color: #ffffff;
 }
