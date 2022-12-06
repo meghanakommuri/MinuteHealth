@@ -43,26 +43,35 @@
           <label class="form-label required" for="customFile" style="font-size: 12px">Image</label>
           <input type="file" class="form-control" id="customFile" name="customFile"/>
         </div>
-        <div class="form-group">
+        <div class="form-group onerow">
           <label for="name" style="font-size: 12px">Notes</label>
           <input class = "form-control" type="text" placeholder="take with water / take after food">
         </div>
-
-        <div>
-          <div style="display: flex; justify-content: space-between;">
-            <label class="form-label required" style="font-size: 12px">Days</label>
-            <p id="idmonday" class="monday" style="font-size: 12px" onclick="mondayFunction()">M</p>
-            <p id="idtuesday" class="tuesday" style="font-size: 12px" onclick="tuesdayFunction()">Tu</p>
-            <p id="idwednesday" class="wednesday" style="font-size: 12px" onclick="wednesdayFunction()">W</p>
-            <p id="idthursday" class="thursday" style="font-size: 12px" onclick="thursdayFunction()">Th</p>
-            <p id="idfriday" class="friday" style="font-size: 12px" onclick="fridayFunction()">F</p>
-            <p id="idsaturday" class="saturday" style="font-size: 12px" onclick="saturdayFunction()">Sa</p>
-            <p id="idsunday" class="sunday" style="font-size: 12px" onclick="sundayFunction()">Su</p>
-          </div>
+        <label class="form-label required" style="font-size: 12px;">Days</label>
+        <div class="weekDays-selector">
+          <input type="checkbox" id="weekday-mon" class="weekday" />
+          <label for="weekday-mon">M</label>
+          <input type="checkbox" id="weekday-tue" class="weekday" />
+          <label for="weekday-tue">T</label>
+          <input type="checkbox" id="weekday-wed" class="weekday" />
+          <label for="weekday-wed">W</label>
+          <input type="checkbox" id="weekday-thu" class="weekday" />
+          <label for="weekday-thu">T</label>
+          <input type="checkbox" id="weekday-fri" class="weekday" />
+          <label for="weekday-fri">F</label>
+          <input type="checkbox" id="weekday-sat" class="weekday" />
+          <label for="weekday-sat">S</label>
+          <input type="checkbox" id="weekday-sun" class="weekday" />
+          <label for="weekday-sun">S</label>
         </div>
+<!-- 
+        <div class="form-group">
+          <label class="control-label" for="WorkWeek">Select days:</label>
+          <div name="WorkWeek" class="days-of-week" id="WorkWeek"></div>
+        </div> -->
         <div class="form-group">
           <input type="checkbox" id="everyday" name="everyday" onchange="checkbox(this)">
-          <label for="time">Everyday</label>
+          <label for="everyday">Everyday</label>
         </div>
         <div id="parent" style="margin-top: -10px;">
           <label style="vertical-align: top;" class="required">Medicine time</label>
@@ -89,13 +98,13 @@
                 <input type="time" onfocus="clearError(this)" class="vTimeEnd" id="timeend" />
               </td>
               <td>
-                <input type="button" value="Delete" />
+                <input type="button" value="Delete" id="delete"/>
               </td>
             </tr>
           </table></br>
         </div>
         <div class="text-center">
-          <div id='result'></div>
+          <div id='result' style="margin-top:0px"></div>
           <button type="submit" id="validate" style="margin-top: 0px;" class="btn btn-primary btn-sm">SUBMIT</button>
         </div>
       </form>
