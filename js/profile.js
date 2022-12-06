@@ -32,8 +32,8 @@ function updateProfile(){
     sessionStorage.setItem('dob', profile_dob);
     sessionStorage.setItem('contact', profile_contact);
     sessionStorage.setItem('gender', profile_gender);
-    
+
     alert("Profile updated");
-    location.reload();
+    // location.reload();
 }
 $("#update_profile").on("click", updateProfile);
