@@ -142,69 +142,6 @@ hr{
 }
 
 /* addmed */
-.monday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglemonday{
-  border: 2px solid red;
-}
-.tuesday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.toggletuesday{
-  border: 2px solid red;
-}
-.wednesday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglewednesday{
-  border: 2px solid red;
-}
-.thursday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglethursday{
-  border: 2px solid red;
-}
-.friday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglefriday{
-  border: 2px solid red;
-}
-.saturday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglesaturday{
-  border: 2px solid red;
-}
-.sunday{
-  border: 0px solid black;
-  border-radius:50%;
-  padding:3px;
-  display: inline-block;
-}
-.togglesunday{
-  border: 2px solid red;
-}
 
 .circle {
   border-radius: 50%;
@@ -314,4 +251,25 @@ hr{
 .onerow {
   display:inline;
   margin-top: -10px;
+}
+
+.weekDays-selector input {
+  display: none!important;
+}
+.weekDays-selector input[type=checkbox] + label {
+  display: inline-block;
+  border-radius: 12px;
+  background: #ffffff;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  margin-right: 16px;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.weekDays-selector input[type=checkbox]:checked + label {
+  background: #71dd59;
+  color: #ffffff;
 }
