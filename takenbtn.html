@@ -12,12 +12,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-
+  <script src="js/medpal.js" async></script>
 </head>
 <body>
     <div class="container">
         <div class="row top-row">
-            <div class="col-xs-6">
+            <div class="col-xs-6" onclick="location.href='home.html';">
               <img src="Images/logo.png" alt="logo" width="45" height="45">
             </div>
             <div class="col-xs-6 text-right" onclick="location.href='profile.html';">
@@ -27,63 +27,23 @@
                 </svg>
             </div>
         </div><br>
-<<<<<<< Updated upstream
-=======
-        <div onclick="location.href='yourmedicine.html';">
+
+        <div onclick="location.href='medicinereminder.html';">
           <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
               <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
           </svg>
         </div>
->>>>>>> Stashed changes
-
-        <h3 class="text-center">MEDICINE CHECKLIST</h3><br>
-
         
-          <form >
-            <label for="Timeframe">Choose the Timeframe:</label>
-            <select name="Timeframe" id="Timeframe">
-            <option value="Today">Today</option>
-            <option value="This Week">This Week</option>
-            <option value="This Month">This Month</option>
-            </select>
-          </form><br><br> 
+        <h3 class="text-center">Medicine Updates</h3>
+        <div class="text-center">
+          <img src="Images/taken.png" alt="logo" width="280" height="280">
+        </div>
         
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <h4>Vitamin C</h4>
-          <h6>9:00AM</h6>
-          <h6>8:00PM</h6>
-        </div>
-        <div class="col-xs-6" onclick="location.href='taken1.html';">
-          <button class="btn btn-success btn-lg">Taken</button>
-        </div>
-      </div><br>
-
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <h4>Iron</h4>
-          <h6>1:00PM</h6>
-        </div>
-        <div class="col-xs-6" onclick="location.href='taken2.html';">
-          <button class="btn btn-success btn-lg">Taken</button>
-        </div>
-      </div><br>
-
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <h4>D3</h4>
-          <h6>8:00PM</h6>
-        </div>
-        <div class="col-xs-6" onclick="location.href='notyet.html';">
-          <button class="btn btn-warning btn-lg">Not Yet</button>
-        </div>
-      </div><br><br>
-      
-      <div class="text-center" onclick="location.href='stats1.html';">
-        <button type="submit" class="btn btn-primary btn-lg">View All Trends</button>
-      </div>
-          
-            
+        <div><h4 style="color: rgb(74, 214, 61)" class="text-center">Medicine taken at 9:00AM</h4></div>
+        <div><h6 style="color: rgb(243, 111, 15)" class="text-center">Pill Taken on time with food. Keep up the grind!!</h6></div><br>
+        <!-- <div><h4 style="color: rgb(74, 214, 61)" class="text-center">Medicine taken at 8:30PM</h4></div>
+        <div><h6 style="color: rgb(243, 111, 15)" class="text-center">Pill taken on time along with water. Keep up the grind!!</h6></div> -->
+        
     </div>
 
     <div class="fixed-row-bottom">
@@ -99,7 +59,7 @@
             <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
           </svg>
         </div>
-        <div class="col-xs-3 text-center" onclick="location.href='medpalform.html';">
+        <div class="col-xs-3 text-center" onclick=navigate()>
           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
             <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
             <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
@@ -107,10 +67,10 @@
           </svg>
         </div>
         <div class="col-xs-3 text-center">
-          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list-check" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#3062C8" class="bi bi-list-check" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3.854 2.146a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 3.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708L2 7.293l1.146-1.147a.5.5 0 0 1 .708 0zm0 4a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
           </svg>
         </div>
-      </div>
+    </div>
 </body>
 </html>
