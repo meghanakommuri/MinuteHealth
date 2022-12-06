@@ -48,18 +48,24 @@
           <input class = "form-control" type="text" placeholder="take with water / take after food">
         </div>
 
-        <div>
-          <div style="display: flex; justify-content: space-between;">
-            <label class="form-label required" style="font-size: 12px">Days</label>
-            <p id="idmonday" class="monday" style="font-size: 12px" onclick="mondayFunction()">M</p>
-            <p id="idtuesday" class="tuesday" style="font-size: 12px" onclick="tuesdayFunction()">Tu</p>
-            <p id="idwednesday" class="wednesday" style="font-size: 12px" onclick="wednesdayFunction()">W</p>
-            <p id="idthursday" class="thursday" style="font-size: 12px" onclick="thursdayFunction()">Th</p>
-            <p id="idfriday" class="friday" style="font-size: 12px" onclick="fridayFunction()">F</p>
-            <p id="idsaturday" class="saturday" style="font-size: 12px" onclick="saturdayFunction()">Sa</p>
-            <p id="idsunday" class="sunday" style="font-size: 12px" onclick="sundayFunction()">Su</p>
-          </div>
+        <label class="form-label required" style="font-size: 12px;">Days</label>
+        <div class="weekDays-selector">
+          <input type="checkbox" id="weekday-mon" class="weekday" />
+          <label for="weekday-mon">M</label>
+          <input type="checkbox" id="weekday-tue" class="weekday" />
+          <label for="weekday-tue">Tu</label>
+          <input type="checkbox" id="weekday-wed" class="weekday" />
+          <label for="weekday-wed">W</label>
+          <input type="checkbox" id="weekday-thu" class="weekday" />
+          <label for="weekday-thu">Th</label>
+          <input type="checkbox" id="weekday-fri" class="weekday" />
+          <label for="weekday-fri">F</label>
+          <input type="checkbox" id="weekday-sat" class="weekday" />
+          <label for="weekday-sat">Sa</label>
+          <input type="checkbox" id="weekday-sun" class="weekday" />
+          <label for="weekday-sun">Su</label>
         </div>
+        
         <div class="form-group">
           <input type="checkbox" id="everyday" name="everyday" onchange="checkbox(this)">
           <label for="time">Everyday</label>
