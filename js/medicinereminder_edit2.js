@@ -1,83 +1,26 @@
-function mondayFunction() {
-   var element = document.getElementById("idmonday");
-   element.classList.toggle("togglemonday");
+function allAreFalse(days) {
+  return days.every(element => element.checked === false);
 }
 
-function tuesdayFunction() {
-   var element = document.getElementById("idtuesday");
-   element.classList.toggle("toggletuesday");
-}
-
-function wednesdayFunction() {
-   var element = document.getElementById("idwednesday");
-   element.classList.toggle("togglewednesday");
-}
-
-function thursdayFunction() {
-   var element = document.getElementById("idthursday");
-   element.classList.toggle("togglethursday");
-}
-
-function fridayFunction() {
-   var element = document.getElementById("idfriday");
-   element.classList.toggle("togglefriday");
-}
-
-function saturdayFunction() {
-   var element = document.getElementById("idsaturday");
-   element.classList.toggle("togglesaturday");
-}
-
-function sundayFunction() {
-   var element = document.getElementById("idsunday");
-   element.classList.toggle("togglesunday");
-}
+var monday = document.getElementById("weekday-mon");
+var tuesday = document.getElementById("weekday-tue");
+var wednesday = document.getElementById("weekday-wed");
+var thursday = document.getElementById("weekday-thu");
+var friday = document.getElementById("weekday-fri");
+var saturday = document.getElementById("weekday-sat");
+var sunday = document.getElementById("weekday-sun")
+var days=[monday,tuesday,wednesday,thursday,friday,saturday, sunday]
 
 function alldaycheckFunction() {
-  var element = document.getElementById("idmonday");
-  element.classList.add("togglemonday");
-
-  var element = document.getElementById("idtuesday");
-  element.classList.add("toggletuesday");
-
-  var element = document.getElementById("idwednesday");
-  element.classList.add("togglewednesday");
-
-  var element = document.getElementById("idthursday");
-  element.classList.add("togglethursday");
-
-  var element = document.getElementById("idfriday");
-  element.classList.add("togglefriday");
-
-  var element = document.getElementById("idsaturday");
-  element.classList.add("togglesaturday");
-
-  var element = document.getElementById("idsunday");
-  element.classList.add("togglesunday");
-
+  for(d of days){
+    d.checked=true;
+  }
 }
 
 function removealldaycheckFunction() {
-  var element = document.getElementById("idmonday");
-  element.classList.remove("togglemonday");
-
-  var element = document.getElementById("idtuesday");
-  element.classList.remove("toggletuesday");
-
-  var element = document.getElementById("idwednesday");
-  element.classList.remove("togglewednesday");
-
-  var element = document.getElementById("idthursday");
-  element.classList.remove("togglethursday");
-
-  var element = document.getElementById("idfriday");
-  element.classList.remove("togglefriday");
-
-  var element = document.getElementById("idsaturday");
-  element.classList.remove("togglesaturday");
-
-  var element = document.getElementById("idsunday");
-  element.classList.remove("togglesunday");
+  for(d of days){
+    d.checked=false;
+  }
 }
 
 function checkbox(checkboxElem) {
@@ -100,15 +43,21 @@ $('#myTable').on('click', 'input[type="button"]', function () {
   $(this).closest('tr').remove();
   count=count-1;
   document.getElementById("addTime").disabled = false;
+  if (count===0){
+    document.getElementById("myTable").deleteTHead();
+  }
 });
 
 $('#addTime').click(function () {
 //add new entry form
+  if(count===0){
+    $('#myTable').append('<thead><td>Start Time</td><td>End Time</td></thead>');
+  }
   $('#myTable').append('<tr class="t-row"><td><input type="time" onfocus="clearError(this)" id="timestart" class="vTimeStart" /></td><td><input onfocus="clearError(this)" type="time"  value="" id="timeend" class="vTimeEnd" /></td><td><input type="button" id="del" value="Delete" /></td></tr>');
   count = count + 1;
   if(count >= 3){
     document.getElementById("addTime").disabled = true;
-    document.getElementById("result").style.marginTop= "-8px";
+    document.getElementById("result").style.marginTop= "-11px";
  }
  else{
     document.getElementById("addTime").disabled = false;
