@@ -1,3 +1,12 @@
+function myFunction3() {
+  var x = document.getElementById("pwd");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+
 function validateLogin(){
     let result = $("#result");
     let name = $("#name").val();

@@ -103,7 +103,7 @@ function validateAddMed(){
       }
     });
     //textfields validarion
-    if(name.length===0 || dosage.length===0 || file.length===0 || count===0){
+    if(name.length===0 || dosage.length===0 || file.length===0 || count===0 || allAreFalse(days)===true){
       result.text("Fill all required fields");
       result.css("color", "red");
       validtime=false;
